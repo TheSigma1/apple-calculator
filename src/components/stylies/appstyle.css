@@ -1,0 +1,44 @@
+body{
+  display: flex;
+  justify-content: center;
+  }
+.Calculator {
+  background: black;
+  border-radius: 50px;
+  color: white;
+  height: 700px;
+  padding: 20px;
+  position: relative;
+  width: 390px;
+}
+.Top{
+  display:flex;
+  height: 30px;
+}
+
+.display {
+  margin-top: 10px;
+  font-size: 130px;
+  font-weight: 300;
+  text-align:right;
+  margin-bottom: 20px;
+  
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.bottom {
+  position: absolute;
+  width: 200px;
+  height: 5px;
+  background: white;
+  bottom: 10px;
+  left: 50%;
+  border-radius: 4px;
+  transform: translateX(-50%);
+}
